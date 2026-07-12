@@ -103,8 +103,6 @@ Example:
 
 ```c
 #include "get_next_line.h"
-#include <fcntl.h>
-#include <stdio.h>
 
 int main(void)
 {
@@ -134,7 +132,6 @@ get_next_line/
 ├── get_next_line_bonus.c
 ├── get_next_line_utils_bonus.c
 ├── get_next_line_bonus.h
-├── Makefile
 └── README.md
 ```
 
