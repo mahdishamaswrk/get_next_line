@@ -60,27 +60,30 @@ Each file descriptor maintains its own reading state, allowing multiple files to
 
 ## Compilation
 
-Compile the project using:
+The project does not include a Makefile. Compile the source files directly with your program:
 
 ```bash
-make
+cc main.c get_next_line.c get_next_line_utils.c
 ```
 
-This creates the library:
-
-```text
-get_next_line.a
-```
-
-Available Makefile commands:
+For the bonus part:
 
 ```bash
-make        # Compile the project
-make bonus  # Compile bonus version
-make clean  # Remove object files
-make fclean # Remove object files and library
-make re     # Recompile everything
+cc main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
+
+Make sure to include the correct header file:
+
+```c
+#include "get_next_line.h"
+```
+
+or for the bonus version:
+
+```c
+#include "get_next_line_bonus.h"
+```
+
 
 ## Usage
 
